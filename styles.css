@@ -1,20 +1,183 @@
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+}
+
+
 body {
-  padding: 40px;
-  text-align: center;
-  background-color: rgb(2, 36, 6);
+  padding: 50px 15px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(138, 174, 142);
 }
 
-#listContainer{
-    padding: 20px;
+h1{
+    text-align: center;
+    font-size: 26px;
+    color: rgb(34, 71, 14);
+}
 
+.container{
+    width: 100%;
+    max-width: 530px;
+    background:rgb(215, 205, 162);
+    border: 2px solid rgb(159, 152, 118);
+    border-radius: 30px;
+    padding: 10px;
 }
 
 
-.name-todo{
-    padding: 15px;
+.todo-add{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
 
 }
 
-.hours-todo{
-    padding: 15px;
+input[type="text"],
+input[type="number"] {
+
+    padding: 10px;
+    border: 1px solid rgb(159, 152, 118);
+    border-radius: 20px;
 }
+
+input[type="text"]{
+    flex: 1;
+    min-width: 0;
+}
+
+input[type="number"]{
+    width: 50px;
+}
+
+.add-btn{
+    background:rgb(14, 70, 14);
+    border-radius: 20px;
+    color: rgb(192, 190, 179);
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.filter-sec{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.filters{
+    display: flex;
+    gap: 10px;
+}
+
+.filter{
+    background:rgb(14, 70, 14);
+    border-radius: 20px;
+    color: rgb(192, 190, 179);
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+.mark-all{
+    background:rgb(138, 174, 142);
+    border-radius: 20px;
+    color: rgb(23, 22, 21);
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.list{
+    list-style: none;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    border-bottom: 1px solid rgb(62, 58, 34);
+}
+
+.list-item input[type="checkbox"]{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.task-name{
+    flex: 1;
+    min-width: 0;
+}
+
+.list-item.completed .task-name {
+    text-decoration: line-through;
+    color: #999;
+    /*FOR ITEM COMPLETED ONLY*/
+} 
+
+.difficulty {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.easy {
+    background: whitesmoke;
+    color: #28540b;
+}
+
+.medium {
+    background: whitesmoke;
+    color: #b3ab1b;
+}
+
+.hard {
+    background: whitesmoke;
+    color: rgb(198, 66, 66);
+}
+
+.delete-btn{
+    color: rgb(25, 25, 24);
+    cursor: pointer;
+    padding: 5px 10px;
+    background: transparent;
+    border:none;
+    font-weight: bolder;
+    
+}
+
+.delete-btn:hover {
+    color: rgb(175, 15, 15);
+}
+
+.footer{
+    margin-top: 10px;
+    font-size: 11px;
+    color:black;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.clear-btn{
+    background:rgb(138, 174, 142);
+    border-radius: 20px;
+    color: rgb(23, 22, 21);
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 10px;
+}
+ .guide{
+    text-align: center;
+    font-size: 11px;
+    color: gray;
+ }
+
