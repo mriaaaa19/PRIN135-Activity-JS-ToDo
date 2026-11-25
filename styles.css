@@ -8,9 +8,11 @@
 
 
 body {
-  padding: 50px 15px;
+  padding: 50px;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: rgb(138, 174, 142);
 }
 
@@ -22,11 +24,12 @@ h1{
 
 .container{
     width: 100%;
-    max-width: 530px;
+    max-width: 750px;
+    min-width: 500px;
     background:rgb(215, 205, 162);
     border: 2px solid rgb(159, 152, 118);
-    border-radius: 30px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 
@@ -181,3 +184,4 @@ input[type="number"]{
     color: gray;
  }
 
+ 
