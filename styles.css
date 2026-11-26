@@ -65,6 +65,15 @@ input[type="number"]{
     padding: 10px 20px;
 }
 
+.filter-active{
+    background:rgb(142, 219, 142);
+    border-radius: 20px;
+    color: rgb(17, 17, 15);
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
 .filter-sec{
     display: flex;
     align-items: center;
